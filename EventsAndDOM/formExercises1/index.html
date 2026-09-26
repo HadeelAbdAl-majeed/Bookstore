@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        margin: 0;
+       }
+       #formCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        /* border: 2px solid black; */
+       }
+
+       #userName , #password , #confirmPassword{
+        margin: 10px;
+       }
+
+       #userName input , #password input , #confirmPassword input{
+        display: block;
+       }
+
+       #userName span, #password span, #confirmPassword span{
+        font-size: 12px;
+        color: red;
+       }
+
+       #submitButt{
+        padding: 5px 10px;
+        margin:2px 20px;
+        width: 150px;
+        background-color: #65D0F4;
+        color: white;
+        border: none;
+        border-radius: 3px;
+       }
+
+    </style>
+</head>
+<body>
+
+    <div id="formCard">
+        <h1>Registration Form</h1>
+        <form action="" id="formData">
+        <div id="userName">
+            <label for="name" >User Name</label>
+            <input id="name" type="text" value="">
+            <span id="error-messageUserName"></span>
+        </div>
+        <div id="password">
+            <label for="pass">Password</label>
+            <input id="pass" type="password" >
+            <span id="error-messagePassword"></span>
+        </div>
+        <div id="confirmPassword">
+            <label for="confirmPass">Confirm Password</label>
+            <input id="confirmPass" type="password" >
+            <span id="error-messageConfirmPassword"></span><br>
+            <span id="error-message"></span>
+        </div>
+        <button type="submit" id="submitButt" disabled> submit</button>
+    </form>
+    
+    </div>
+
+    
+    <script src="./app.js"></script>
+</body>
+</html>

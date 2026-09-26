@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <!-- <script src="./app.js"></script> -->
+   
     <title>Bookstore</title>
 </head>
 <body>
@@ -15,6 +15,62 @@
         <button onclick="location.reload()">click here</button>
     </div>
 
+
+
    <script src="./app.jsch"></script> 
+</body>
+</html> -->
+
+
+<!-- ========================================================================== -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        
+    </style>
+    <title>Bookstore</title>
+</head>
+<body>
+
+    <div id="formCard">
+        <h1>Bookstore</h1>
+        <form id="formData">
+            <div id="UserName">
+                <label for="name">User Name</label>
+                <input id="name" type="text" value="">
+            </div>
+
+            <div id="membership">
+                <label for="membershipType">Membership</label>
+                <select name="membershipType" id="membershipType">
+                    <option value="student">Student</option>
+                    <option value="regular">Regular</option>
+                </select>
+            </div>
+
+            <div id="bookGenre">
+                <label for="genre">Book Genre</label>
+                <input id="genre" type="text">
+            </div>
+
+            <div id="bookTitle">
+                <label for="b-title">Book Title</label>
+                <input id="b-title" type="text">
+            </div>
+
+            <button type="submit" id="submitButt">Submit</button>
+        </form>
+    </div>
+
+    <div id="result-card"></div>
+    
+    <script src="./app.js"></script>
 </body>
 </html>
